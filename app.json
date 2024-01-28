@@ -1,0 +1,182 @@
+{
+  "uuid": "48e58586-3190-11ee-952d-33edcc7abcec",
+  "page": {
+    "id": 232828425,
+    "changesRecord": [
+      {
+        "type": "FRAME_TEMPLATE_CREATE",
+        "payload": {
+          "template": {
+            "id": "$header",
+            "type": "frame",
+            "style": {},
+            "folder": "ZARATE",
+            "subtype": "Frame",
+            "template": {
+              "type": "header",
+              "sticky": true,
+              "padding": "8px 12px",
+              "isHiddenOnMobile": true,
+              "isHiddenOnDesktop": false
+            },
+            "container": "",
+            "createdAt": "2024-01-27T20:19:14.346Z",
+            "updatedAt": "2024-01-27T20:19:14.346Z"
+          }
+        }
+      },
+      {
+        "type": "WIDGET_TYPE_MIGRATION",
+        "payload": {
+          "widgetId": "navigation",
+          "newPlugin": {
+            "id": "navigation",
+            "type": "widget",
+            "uuid": null,
+            "style": null,
+            "folder": "",
+            "screen": null,
+            "subtype": "NavigationWidget2",
+            "tabIndex": null,
+            "template": {
+              "src": "",
+              "_ids": [
+                "95a5c",
+                "c2fd2",
+                "14333",
+                "4e270",
+                "a43d8",
+                "b6b32"
+              ],
+              "data": [],
+              "style": {},
+              "labels": [],
+              "_labels": [
+                "Learn more",
+                "Working with components",
+                "Reading and writing data",
+                "Retool docs",
+                "Community",
+                "What's new"
+              ],
+              "altText": "",
+              "srcType": "src",
+              "dbBlobId": "",
+              "disabled": "",
+              "itemMode": "static",
+              "heightType": "auto",
+              "keyByIndex": [],
+              "marginType": "normal",
+              "_keyByIndex": [
+                "c3e24b2f-a237-4590-a8c4-dc7292feed6e",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "iconByIndex": [],
+              "orientation": "horizontal",
+              "tooltipText": "",
+              "_iconByIndex": [],
+              "overflowMode": "scroll",
+              "hiddenByIndex": [],
+              "storageBlobId": "",
+              "_hiddenByIndex": [
+                "",
+                null,
+                null,
+                null,
+                "",
+                ""
+              ],
+              "captionByIndex": [],
+              "tooltipByIndex": [],
+              "_captionByIndex": [],
+              "_tooltipByIndex": [],
+              "disabledByIndex": [],
+              "itemTypeByIndex": [],
+              "_disabledByIndex": [],
+              "_itemTypeByIndex": [
+                "custom",
+                "custom",
+                "custom",
+                "custom",
+                "custom",
+                "custom"
+              ],
+              "appTargetByIndex": [],
+              "highlightByIndex": [],
+              "parentKeyByIndex": [],
+              "retoolFileObject": {},
+              "_appTargetByIndex": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "_highlightByIndex": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "_parentKeyByIndex": [
+                "",
+                "c3e24b2f-a237-4590-a8c4-dc7292feed6e",
+                "c3e24b2f-a237-4590-a8c4-dc7292feed6e",
+                "c3e24b2f-a237-4590-a8c4-dc7292feed6e",
+                "",
+                ""
+              ],
+              "horizontalAlignment": "left",
+              "iconPositionByIndex": [],
+              "retoolStorageFileId": "",
+              "screenTargetByIndex": [],
+              "_iconPositionByIndex": [],
+              "_screenTargetByIndex": [],
+              "retoolStorageDynamicInput": false,
+              "retoolStorageShowLegacyFiles": false,
+              "_automaticallyHighlightedIndices": []
+            },
+            "container": "",
+            "createdAt": "2023-08-02T23:57:06.287Z",
+            "namespace": null,
+            "position2": {
+              "col": 0,
+              "row": 0,
+              "width": 9,
+              "height": 1,
+              "tabNum": 0,
+              "rowGroup": "body",
+              "container": "",
+              "subcontainer": "header"
+            },
+            "updatedAt": "2023-08-02T23:57:06.287Z",
+            "resourceName": null,
+            "mobilePosition2": null,
+            "mobileAppPosition": null,
+            "resourceDisplayName": null
+          }
+        }
+      }
+    ],
+    "gitSha": null,
+    "checksum": null,
+    "createdAt": "2024-01-27T20:22:59.188Z",
+    "updatedAt": "2024-01-27T20:22:59.188Z",
+    "pageId": 2284237,
+    "userId": 695975,
+    "branchId": null,
+    "resource": "ZARATE",
+    "page": {
+      "name": "Title your first app",
+      "sdsd": "ZARATE"
+    }
+  },
+  "modules": {}
+}
