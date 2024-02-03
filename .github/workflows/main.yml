@@ -17,11 +17,13 @@ jobs:
       matrix:
         branch:
           - staging
-            script_args: "app.json ZARATE 111111"
-            commit_branch: "production"
           - production
-            script_args: "app.json 111111 ZARATE"
-            commit_branch: "staging"
+        script_args:
+          - "app.json ZARATE 111111"
+          - "app.json 111111 ZARATE"
+        commit_branch:
+          - production
+          - staging
 
     steps:
     - name: Checkout code
@@ -35,8 +37,7 @@ jobs:
         python-version: 3.8
 
     - name: Run script
-      run: |
-        python script.py ${{ matrix.script_args }}
+      run: python script.py ${{ matrix.script_args }}
 
     - name: Commit and push changes
       uses: stefanzweifel/git-auto-commit-action@v5
