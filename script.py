@@ -1,4 +1,5 @@
 import json
+import sys
 
 def replace_value(json_data, value_to_replace, new_value):
     if isinstance(json_data, dict):
@@ -12,23 +13,27 @@ def replace_value(json_data, value_to_replace, new_value):
             if isinstance(item, (dict, list)):
                 replace_value(item, value_to_replace, new_value)
 
-# Path to the original JSON file and the updated file
-original_json_file = "app.json"
-updated_json_file = "updated.json"
+if __name__ == "__main__":
+    if len(sys.argv) != 4:
+        print("Usage: python script.py <original_json_file> <value_to_replace> <new_value>")
+        sys.exit(1)
 
-# Value to replace and new value
-value_to_replace = "909090"
-new_value = "2222222"
+    # Path to the original JSON file
+    original_json_file = sys.argv[1]
 
-# Open the original JSON file in read mode
-with open(original_json_file, "r") as f:
-    # Load the JSON content
-    data = json.load(f)
+    # Value to replace and new value
+    value_to_replace = sys.argv[2]
+    new_value = sys.argv[3]
 
-    # Perform recursive replacement
-    replace_value(data, value_to_replace, new_value)
+    # Open the original JSON file in read mode
+    with open(original_json_file, "r") as f:
+        # Load the JSON content
+        data = json.load(f)
 
-# Write the modified data to a new JSON file
-with open(original_json_file, "w") as f:
-    # Write the modified data to the new file
-    json.dump(data, f, indent=2)
+        # Perform recursive replacement
+        replace_value(data, value_to_replace, new_value)
+
+    # Write the modified data to the same JSON file
+    with open(original_json_file, "w") as f:
+        # Write the modified data to the file
+        json.dump(data, f, indent=2)
