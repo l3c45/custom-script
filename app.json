@@ -10,7 +10,7 @@
             "id": "$header",
             "type": "frame",
             "style": {},
-            "folder": "111111",
+            "folder": "ZARATE",
             "subtype": "Frame",
             "template": {
               "type": "header",
@@ -172,7 +172,7 @@
     "pageId": 2284237,
     "userId": 695975,
     "branchId": null,
-    "resource": "111111",
+    "resource": "ZARATE",
     "page": {
       "name": "Title your first app",
       "sdsd": "ZARATE"
