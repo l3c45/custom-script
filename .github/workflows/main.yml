@@ -4,14 +4,24 @@ on:
   push:
     branches:
       - staging
+      - production
 
 jobs:
   update_app_json:
     runs-on: ubuntu-latest
 
     permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
       contents: write
+
+    strategy:
+      matrix:
+        branch:
+          - staging
+            script_args: "app.json ZARATE 111111"
+            commit_branch: "production"
+          - production
+            script_args: "app.json 111111 ZARATE"
+            commit_branch: "staging"
 
     steps:
     - name: Checkout code
@@ -26,9 +36,9 @@ jobs:
 
     - name: Run script
       run: |
-        python script.py app.json ZARATE 111111
+        python script.py ${{ matrix.script_args }}
 
-
-    - uses: stefanzweifel/git-auto-commit-action@v5
+    - name: Commit and push changes
+      uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        branch: production
+        branch: ${{ matrix.commit_branch }}
